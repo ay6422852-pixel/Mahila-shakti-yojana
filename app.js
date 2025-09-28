@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 const allowedOrigins = [
-  "https://silly-axolotl-679d7b.netlify.app/login" // deployed frontend
+  "https://silly-axolotl-679d7b.netlify.app" // deployed frontend
 ];
 
 app.use(cors({

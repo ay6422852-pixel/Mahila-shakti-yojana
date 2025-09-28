@@ -9,7 +9,9 @@ import userRoutes from "./routes/users.js";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin:["https://silly-axolotl-679d7b.netlify.app/login"]
+}));
 app.use(express.json());
 
 // MongoDB connection
